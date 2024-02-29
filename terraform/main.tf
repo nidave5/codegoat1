@@ -62,6 +62,7 @@ module "instance" {
 
   tags = {
     Environment = var.env
+    yor_trace   = "a3985878-1226-4fa6-a47a-bb9092386636"
   }
 }
 
@@ -69,4 +70,7 @@ module "instance" {
 resource "aws_ebs_volume" "i" {
   availability_zone = "${var.region}a"
   size              = 40
+  tags = {
+    yor_trace = "4c6614cf-ff27-47a5-8235-e42b1f3a5c27"
+  }
 }

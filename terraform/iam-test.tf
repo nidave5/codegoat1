@@ -22,6 +22,9 @@ resource "aws_iam_policy" "policy_resource_fail" {
       }
     ]
   })
+  tags = {
+    yor_trace = "1d173543-e8d3-46e2-9ed5-b86be9ee3c22"
+  }
 }
 
 resource "aws_iam_policy" "policy_resource_pass" {
@@ -48,6 +51,9 @@ resource "aws_iam_policy" "policy_resource_pass" {
       }
     ]
   })
+  tags = {
+    yor_trace = "afe2e5fc-38e1-4e10-a726-7e7b53c5bdbe"
+  }
 }
 
 data "aws_iam_policy_document" "policy_data_fail" {
